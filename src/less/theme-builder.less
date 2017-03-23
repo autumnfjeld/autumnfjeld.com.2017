@@ -23,21 +23,22 @@
 14. Footer
 -------------------------------------------------------------------*/
 
+@import "styles.less";
+
 /* ==========================================================
 ! 1. Colors (EDIT THE COLORS BELOW)
 ========================================================== */	
 @import "variables.less";
-@color1: #09afad;
-@color2: #031634;
-@color3: #da222b;
-@textcolor: #333;
+//@color1: #09afad;
+//@color2: #031634;
+//@color3: #da222b;
+//@textcolor: #333;
 
 
 /* ==========================================================
 ! 2. General
 ========================================================== */	
 body {
-
 	background-image: url('../../img/background2.jpg');
 	background-color: @color2;
 }
@@ -138,12 +139,12 @@ p {
 
 
 .side-menu-button {	
-	background: #333;
+	//background: ;
 	opacity: 0.9;
 }
 
 .side-menu {
-	background: #111;
+	background: @color3;
 	a {
 
 	}
@@ -221,6 +222,10 @@ p {
 
 .progress-bar-3 {
 	background: @color3;
+}
+
+.progress-bar-4 {
+	background: @color4;
 }
 
 /* ==========================================================

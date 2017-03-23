@@ -36,7 +36,7 @@ Primary use:	CV / Resume
 
 body {
 	.font1;
-	background-image: url('../img/background2.jpg');
+	//background-image: url('../img/background2.jpg');
 	//background: #111;
 	background-attachment: fixed;
 	background-repeat: repeat-x;
@@ -201,7 +201,7 @@ p {
 .section-title {
 	text-transform: uppercase;
 	color: @color2 - #111;
-	font-weight: bold;
+	//font-weight: bold;
 	font-size: 40px;
 	line-height: 40px;
 	padding-bottom: 20px;	
@@ -218,7 +218,7 @@ p {
 	border-bottom: 1px solid #ccc;
 	padding-bottom: 5px;
 	font-weight: bold;
-	text-transform: uppercase;
+	//text-transform: uppercase;
 	font-size: 20px;
 	margin-top: 14px;
 }
@@ -311,6 +311,9 @@ p {
 	background: @color3;
 }
 
+.top-color4 {
+	background: @color4;
+}
 /* ==========================================================
 ! 5. Side Menu
 ========================================================== */	
@@ -342,7 +345,7 @@ p {
 	left: -250px;
 	width: 250px;
 	height: 100%;
-	background: #111;
+	background-color: @color3;
 	color: @bgcolor;
 	padding: 60px 22px;
 	z-index: 888;
@@ -404,6 +407,7 @@ p {
 
 .side-menu-name {
 	border: 2px solid @bgcolor;
+	.border-radius(@radius1);
 	color: @bgcolor;
 	opacity: 0.9;
 	text-align: center;
@@ -447,7 +451,7 @@ p {
 	text-align: center;
 	background: none;
 	border: 1px solid @bgcolor + #555;
-	.border-radius(0);
+	.border-radius(@radius1);
 	height: 40px;
 	line-height: 40px;
 	margin-bottom: 8px;
@@ -525,7 +529,16 @@ p {
 
 /* ==========================================================
 ! 8. Vertical Timeline
-========================================================== */	
+========================================================== */
+
+.timeline-intro {
+
+	.btn-social {
+		background-color: @color3;
+		color: white;
+	}
+}
+
 .timeline-wrap	{
 	//background: @color1;
 	position: relative;
@@ -610,7 +623,7 @@ p {
 	}
 }
 
-.timeline-margin-big {
+.timeline-margin-big {		// At end
 	.content-wrap {
 		@media @laptop {
 			height: 260px;
@@ -638,14 +651,14 @@ p {
 .line-content-education {	
 	padding-bottom: 10px;
 	@media @laptop {
-		min-height: 150px;
+		min-height: 90px;
 		//padding-bottom: 40px;
 	}
 }
 
 .graduation-time, .job {
 	font-size: 14px;
-	font-weight: bold;
+	//font-weight: bold;
 	color: @textcolor + #444;
 }
 
@@ -661,6 +674,16 @@ p {
 		font-size: 13px;
 		line-height: 19px;
 	}
+
+	ul {
+		padding: 0 0 0 18px;
+		li {
+			 color: @textcolor-light;
+			.li-text {
+				color: @textcolor;//color of text
+			}
+		}
+	}
 }
 
 /* ==========================================================
@@ -674,7 +697,7 @@ p {
 	position: absolute;
 	left: 0px;
 	font-size: 13px;
-	padding: 3px 30px 2px 10px;
+	padding: 3px 10px 2px 10px;
 	color: rgb(255, 255, 255);
 	background-color: rgba(25, 25, 25, 0.2);
 }
@@ -704,6 +727,9 @@ p {
 	background: @color3;
 }
 
+.progress-bar-4 {
+	background: @color4;
+}
 /* ==========================================================
 ! 11. Section: Portfolio
 ========================================================== */
@@ -987,8 +1013,8 @@ textarea.form-control {
 
 .thank-you {
 	font-weight: 200;
-	font-size: 67px;
-	line-height: 48px;
+	font-size: 42px;
+	//line-height: 48px;
 	color: @textcolor + #555;
 	font-style: italic;
 	position: relative;

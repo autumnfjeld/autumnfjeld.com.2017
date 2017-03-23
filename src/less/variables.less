@@ -5,11 +5,13 @@
 @mobile:    ~"(min-width: 240px) and (max-width: 719px)";
 
 //Colors
-@color1: #249991;
+@color1: #2d703e;
 @color2: #3b658a;
-@color3: #ce5f5f;
+@color3: #624182;
+@color4: #9b4358;
 @bgcolor: #fafafa;
 @textcolor: #555;
+@textcolor-light: #555 + #444;
 
 .color1 {
   color: @color1;
@@ -21,6 +23,10 @@
 
 .color3 {
   color: @color3;
+}
+
+.color4 {
+  color: @color4;
 }
 
 //fonts
@@ -43,6 +49,9 @@
     -moz-transition: all @anima;
     transition: all @anima;
 }
+
+
+@radius1: 12px;
 
 
 .border-radius (@radius) {
