@@ -1,0 +1,30 @@
+{
+  "name": "autumnfjeld.com.2017",
+  "version": "1.0.0",
+  "description": "Autumn's resume website",
+  "main": "index.js",
+  "scripts": {
+    "less": "lessc src/less/styles.less public/css/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/autumnfjeld/autumnfjeld.com.2017.git"
+  },
+  "keywords": [
+    "autumn fjeld",
+    "autumn bubbles",
+    "web developer",
+    "software engineer",
+    "color",
+    "colorful"
+  ],
+  "author": "Autumn Fjeld",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/autumnfjeld/autumnfjeld.com.2017/issues"
+  },
+  "homepage": "autumnfjeld.com",
+  "devDependencies": {
+    "less": "^2.7.2"
+  }
+}
