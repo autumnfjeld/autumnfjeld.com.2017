@@ -6,8 +6,8 @@
   "scripts": {
     "less": "lessc src/less/styles.less public/css/styles.css",
     "//": "Use index.pug as main file,",
-    "pug": "pug -O src/index.js src/index.pug --pretty",
-    "watch-pug": "pug -O src/index.js src/index.pug --pretty -w"
+    "pug": "pug -O src/index.js src/index.pug  -o public --pretty",
+    "watch-pug": "pug -O src/index.js src/index.pug -o public --pretty -w"
   },
   "repository": {
     "type": "git",
