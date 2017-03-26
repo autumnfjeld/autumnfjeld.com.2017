@@ -1,7 +1,48 @@
-//- index.pug
 doctype html
-html
-  include portfolio.pug
-  body
-    h1 My Site
-    p Welcome to my super lame site.
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    //if IE
+      meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title #{app.general.firstName} #{app.general.lastName}
+    link(href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700',
+         | rel='stylesheet', type='text/css')
+    link(href='vendor/bootstrap/css/bootstrap.min.css', rel='stylesheet')
+    link(rel='stylesheet', href='vendor/font-awesome/css/font-awesome.min.css')
+    link(href='vendor/nivo-lightbox/nivo-lightbox.css', rel='stylesheet')
+    link(rel='stylesheet', href='vendor/nivo-lightbox/themes/default/default.css', type='text/css')
+    link(href='vendor/animate.css', rel='stylesheet')
+    link(href='css/styles.css', rel='stylesheet')
+    //if lt IE 9
+      script(src='vendor/html5shiv.js')
+      script(src='vendor/respond.min.js')
+    link(rel='shortcut icon', href='favicon-greenbubble.ico', type='image/x-icon')
+    link(rel='icon', href='favicon-greenbubble.ico', type='image/x-icon')
+    link(href='apple-touch-icon-144.png', rel='apple-touch-icon-precomposed', sizes='144x144')
+    link(href='apple-touch-icon-114-precomposed.png', rel='apple-touch-icon-precomposed', sizes='114x114')
+    link(href='apple-touch-icon-72-precomposed.png', rel='apple-touch-icon-precomposed', sizes='72x72')
+    link(href='apple-touch-icon-57.png', rel='apple-touch-icon-precomposed')
+  body(data-spy='scroll', data-target='#side-menu')
+    div#page-loader.loader
+      .loading-wrapper
+        .tp-loader.spinner
+        .side-menu-name
+          | Autumn
+          strong Fjeld
+        p.side-menu-job #{app.general.careerTitle}
+
+    include nav.pug
+    script(src='vendor/jquery-1.11.1.min.js')
+    script(src='vendor/bootstrap/js/bootstrap.min.js')
+    script(src='vendor/jquery.easing.min.js')
+    script(src='vendor/jquery.mousewheel.min.js')
+    script(src='vendor/jquery.nicescroll.min.js')
+    script(src='vendor/jquery.nicescroll.plus.js')
+    script(src='vendor/waypoints.min.js')
+    script(src='vendor/nivo-lightbox/nivo-lightbox.min.js')
+    script(src='vendor/jquery.bxslider.min.js')
+    script(src='vendor/jquery.validate.min.js')
+    script(src='vendor/placeholders.jquery.min.js')
+    script(src='vendor/cross-browser.js')
+    script(src='js/main.js')

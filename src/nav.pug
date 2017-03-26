@@ -1,0 +1,44 @@
+.side-menu-open.hidden-sm.hidden-xs
+  a.btn.btn-default.side-menu-button(href='#')
+    i.fa.fa-bars
+    |  MENU
+.side-menu
+  span#side-menu-close
+    i.fa.fa-times
+  .side-menu-name
+    | #{app.general.firstName}
+    strong #{app.general.lastName}
+  p.side-menu-job #{app.general.careerTitle}
+  nav#side-menu.side-menu-este
+    ul.nav.side-menu-nav
+      li
+        a(href='#intro')
+          i.fa.fa-angle-right
+          |  Intro
+      li
+        a(href='#education')
+          i.fa.fa-angle-right
+          |  Education
+      li
+        a(href='#works')
+          i.fa.fa-angle-right
+          |  Work Experience
+      li
+        a(href='#skills')
+          i.fa.fa-angle-right
+          |  Skills
+      li
+        a(href='#interests')
+          i.fa.fa-angle-right
+          |  Interests
+      li
+        a(href='#contact')
+          i.fa.fa-angle-right
+          |  Contact
+  .side-menu-buttons
+    a.btn.btn-side-menu(href="" + app.general.resumeLink, target='_blank')
+      i.fa.fa-download
+      |  Download my resume
+    a.btn.btn-side-menu(href='mailto:' + app.general.email )
+      i.fa.fa-envelope-o
+      |  Send me a message
