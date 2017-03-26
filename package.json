@@ -4,7 +4,10 @@
   "description": "Autumn's resume website",
   "main": "index.js",
   "scripts": {
-    "less": "lessc src/less/styles.less public/css/styles.css"
+    "less": "lessc src/less/styles.less public/css/styles.css",
+    "//": "Use index.pug as main file,",
+    "pug": "pug -O src/index.js src/index.pug --pretty",
+    "watch-pug": "pug -O src/index.js src/index.pug --pretty -w"
   },
   "repository": {
     "type": "git",
@@ -25,6 +28,8 @@
   },
   "homepage": "autumnfjeld.com",
   "devDependencies": {
-    "less": "^2.7.2"
+    "less": "^2.7.2",
+    "pug": "^2.0.0-beta11",
+    "pug-cli": "^1.0.0-alpha6"
   }
 }
