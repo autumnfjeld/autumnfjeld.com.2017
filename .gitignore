@@ -1,4 +1,6 @@
 *.iml
 node_modules
+npm-debug.log
+public/
 public/css
 public/index.html
