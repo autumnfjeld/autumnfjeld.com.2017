@@ -1,0 +1,41 @@
+section#works.timeline.work-experience
+    .line.row.timeline-margin
+        .content-wrap
+            .col-md-1.bg1.timeline-space.full-height.hidden-sm.hidden-xs
+            .col-md-2.timeline-progress.hidden-sm.hidden-xs.full-height
+            .col-md-9.bg1.full-height
+    .line.row
+        .col-md-1.bg1.timeline-space.full-height.hidden-sm.hidden-xs
+        .col-md-2.timeline-progress.hidden-sm.hidden-xs.timeline-title.full-height
+        .col-md-8.content-wrap.bg1
+            h2.section-title Experience
+        .col-md-1.bg1.timeline-space.full-height.hidden-sm.hidden-xs
+
+    for job in app.workExperience
+        div.line.row
+            .col-md-1.bg1.timeline-space.full-height.hidden-sm.hidden-xs
+            .col-md-2.timeline-progress.hidden-sm.hidden-xs.full-height.timeline-work
+            .col-md-8.content-wrap.bg1
+                .line-content.line-content-education
+                    h3.section-item-title-1= job.company
+                    h4.job
+                        i.fa.fa-cogs
+                        span= '  ' +  job.title
+                        span    &middot;
+                        span.job-date= '  ' +    job.location
+                        span   &middot;
+                        span.job-date=  '  ' +   job.startDate + ' - '+ job.endDate
+                    .job-description
+                        ul
+                            for item in job.items
+                                li
+                                    span.li-text= item
+            .col-md-1.bg1.timeline-space.full-height.hidden-sm.hidden-xs
+
+script.
+    console.log('!{app.portfolio.title1}', '#{app.portfolio.title2}', !{JSON.stringify(app.portfolio)});
+    console.log('huh', '!{JSON.stringify(app.workExperience[0].company)}', !{JSON.stringify(app.workExperience)})
+
+
+
+
