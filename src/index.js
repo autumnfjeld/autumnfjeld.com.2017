@@ -34,6 +34,10 @@ var nav = {
 
 };
 
+/**
+ * Work Experience data
+ * @type {[*]}
+ */
 var workExperience = [
     {
         order: 15,
@@ -77,7 +81,7 @@ var workExperience = [
             'Part of a team contracted to develop protype for commercial app. Designed back-end schema in Firebase, chosen for Simplelogin authentication, direct database reference binding.',
             'Built app in AngularJS architecture, ported to mobile with Cordova and styled with Ionic.  Enforced strict modularity in AngularJS controllers and services to create efficient team workflow.',
             'Built a d3.js interactive force directed graph as an AngularJS directive, allowing users to click on a url-node to create an expansive node map of Wikipedia articles.  http://wikiviz.herokuapp.com',
-            // 'Built a d3.js interactive force directed graph as an AngularJS directive, allowing users to click on a url-node to create an expansive node map of Wikipedia articles.<a href="http://wikiviz.herokuapp.com">Wikiviz</a>    #[a(href="http://wikiviz.herokuapp.com") Wikiviz]    #{#[a link](http://example.com)}}',
+            'Built a d3.js interactive force directed graph as an AngularJS directive, allowing users to click on a url-node to create an expansive node map of Wikipedia articles.<a href="http://wikiviz.herokuapp.com">Wikiviz</a>    #[a(href="http://wikiviz.herokuapp.com") Wikiviz]    #{#[a link](http://example.com)}}',
         ]
     },
     {
@@ -130,9 +134,147 @@ var workExperience = [
     //         ''
     //     ]
     // }
-
 ];
 
+/**
+ * Skill set data
+ * @type {*[]}
+ */
+var skills = [
+    {
+        title: 'Languages',
+        skills: [
+            {
+                id: 1,
+                skill: 'HTML5 / CSS3',
+                completed: '80%'
+            },
+            {
+                id: 2,
+                skill: 'Javascript',
+                completed: '80%'
+            },
+            {
+                id: 3,
+                skill: 'PHP',
+                completed: '40%'
+            },
+            {
+                id: 4,
+                skill: 'Java',
+                completed: '30%'
+            }
+        ]
+    },
+    {
+        title: 'Frameworks',
+        skills: [
+            {
+                id: 1,
+                skill: 'Angular',
+                completed: '80%'
+            },
+            {
+                id: 2,
+                skill: 'Backbone',
+                completed: '70%'
+            },
+            {
+                id: 3,
+                skill: 'Jasmine/Mocha',
+                completed: '50%'
+            },
+            {
+                id: 4,
+                skill: 'jQuery',
+                completed: '80%'
+            }
+        ]
+    },
+    {
+        title: 'Database/Backend',
+        skills: [
+            {
+                id: 1,
+                skill: 'Mongo',
+                completed: '60%'
+            },
+            {
+                id: 2,
+                skill: 'MySQL',
+                completed: '50%'
+            },
+            {
+                id: 3,
+                skill: 'Node.js',
+                completed: '55%'
+            },
+            // {
+            //     id: 4,
+            //     skill: 'Java',
+            //     completed: '30%'
+            // }
+        ]
+    },
+    {
+        title: 'Software Tools',
+        skills: [
+            {
+                id: 1,
+                skill: 'Sketch',
+                completed: '40%',
+                toolTip: 'Using sketch regularly and it is becoming my go-to design tool'
+            },
+            {
+                id: 2,
+                skill: 'Adobe Illustrator',
+                completed: '60%'
+            },
+            {
+                id: 3,
+                skill: 'Photoshop',
+                completed: '30%'
+            },
+            // {
+            //     id: 4,
+            //     skill: 'Java',
+            //     completed: '30%'
+            // }
+        ]
+    },
+    {
+        title: 'Professional Skills',
+        skills: [
+            {
+                id: 1,
+                skill: 'Communication',
+                completed: '95%',
+                toolTip: 'I strive to keep coworkers informed and clearly communicate ideas and documentation'
+            },
+            {
+                id: 2,
+                skill: 'Team Player',
+                completed: '90%'
+            },
+            {
+                id: 3,
+                skill: 'Confidence',
+                completed: '90%'
+            },
+            {
+                id: 4,
+                skill: 'Determination',
+                completed: '99%'
+            }
+        ]
+    },
+];
+
+
+/**
+ * Portfolio data
+ * @type {{title1: string, title2: string, img: {primary: string, thumb: string, title: string}}}
+ */
 var portfolio = {
     title1: 'This is title1',
     title2: 'title2',
@@ -147,5 +289,6 @@ var portfolio = {
 exports.app = {
     general: general,
     workExperience: workExperience,
+    skills: skills,
     portfolio: portfolio
 };

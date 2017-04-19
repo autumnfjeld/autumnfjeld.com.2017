@@ -1,0 +1,35 @@
+section#skills.timeline.skills
+    .line.row.timeline-margin
+        .content-wrap
+            .col-md-1.bg1.timeline-space.full-height.hidden-sm.hidden-xs
+            .col-md-2.timeline-progress.hidden-sm.hidden-xs.full-height
+            .col-md-9.bg1.full-height
+    .line.row
+        .col-md-1.bg1.timeline-space.full-height.hidden-sm.hidden-xs
+        .col-md-2.timeline-progress.hidden-sm.hidden-xs.timeline-title.full-height
+        .col-md-8.content-wrap.bg1
+            h2.section-title Skills
+        .col-md-1.bg1.timeline-space.full-height.hidden-sm.hidden-xs
+    for skillSet in app.skills
+        .line.row
+          .col-md-1.bg1.timeline-space.full-height.hidden-sm.hidden-xs
+          .col-md-2.timeline-progress.hidden-sm.hidden-xs.full-height.timeline-point
+          .col-md-8.content-wrap.bg1
+            .line-content
+              h3.section-item-title-1= skillSet.title
+              ul.skills-list
+                for skill in skillSet.skills
+                    li
+                      .progress
+                        .progress-bar(
+                            class='progress-bar-' + skill.id,
+                            data-percent= skill.completed,
+                            role='progressbar',
+                            style='width: '+ skill.completed,
+                            title=skill.toolTip)
+                          span.sr-only= skill.completed + ' Complete'
+                        |
+                        span.progress-type= skill.skill
+                        |
+                        //span.progress-completed= skill.completed
+
