@@ -5,9 +5,12 @@
   "main": "index.js",
   "scripts": {
     "less": "lessc src/less/styles.less public/css/styles.css",
+    "watch-less": "catw -c 'lessc -' 'src/less/styles.less' -o public/css/styles.css",
     "//": "Use index.pug as main file,",
-    "pug": "pug -O src/index.js src/index.pug  -o public --pretty",
-    "watch-pug": "pug -O src/index.js src/index.pug -o public --pretty -w src"
+    "watch-pug": "pug -O src/index.js src/index.pug --out public --watch --pretty",
+    "watch-all": "npm run watch-less & npm run watch-pug",
+    "pug": "pug -O src/index.js src/index.pug  public --pretty",
+    "build-pug": "pug public/index.html"
   },
   "repository": {
     "type": "git",
@@ -28,6 +31,7 @@
   },
   "homepage": "autumnfjeld.com",
   "devDependencies": {
+    "catw": "^1.0.1",
     "less": "^2.7.2",
     "pug": "^2.0.0-beta11",
     "pug-cli": "^1.0.0-alpha6"
