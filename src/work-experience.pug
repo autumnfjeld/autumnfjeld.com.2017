@@ -29,13 +29,13 @@ section#works.timeline.work-experience
                         ul
                             for item in job.items
                                 li
-                                    span.li-text= item
+                                    span.li-text!= item
             .col-md-1.bg1.timeline-space.full-height.hidden-sm.hidden-xs
 
-script.
-    console.log('!{app.portfolio.title1}', '#{app.portfolio.title2}', !{JSON.stringify(app.portfolio)});
-    console.log('huh', '!{JSON.stringify(app.workExperience[0].company)}', !{JSON.stringify(app.workExperience)})
-
+//script.
+//    console.log('!{app.portfolio.title1}', '#{app.portfolio.title2}', !{JSON.stringify(app.portfolio)});
+//    console.log('huh', '!{JSON.stringify(app.workExperience[0].company)}', !{JSON.stringify(app.workExperience)})
+//
 
 
 
