@@ -1,3 +1,4 @@
+var pug = require('pug');
 
 var general = {
     firstName: 'Autumn',
@@ -80,8 +81,8 @@ var workExperience = [
         items: [
             'Part of a team contracted to develop protype for commercial app. Designed back-end schema in Firebase, chosen for Simplelogin authentication, direct database reference binding.',
             'Built app in AngularJS architecture, ported to mobile with Cordova and styled with Ionic.  Enforced strict modularity in AngularJS controllers and services to create efficient team workflow.',
-            'Built a d3.js interactive force directed graph as an AngularJS directive, allowing users to click on a url-node to create an expansive node map of Wikipedia articles.  http://wikiviz.herokuapp.com',
-            'Built a d3.js interactive force directed graph as an AngularJS directive, allowing users to click on a url-node to create an expansive node map of Wikipedia articles.<a href="http://wikiviz.herokuapp.com">Wikiviz</a>    #[a(href="http://wikiviz.herokuapp.com") Wikiviz]    #{#[a link](http://example.com)}}',
+            'Built a d3.js interactive force directed graph as an AngularJS directive, allowing users to click on a url-node to create an expansive node map of Wikipedia articles. <a href="http://wikiviz.herokuapp.com" target="_blank">Wikiviz</a>'
+            // '#[a(href="http://wikiviz.herokuapp.com") Wikiviz]    #{#[a link](http://example.com)}}',
         ]
     },
     {
@@ -270,6 +271,43 @@ var skills = [
     },
 ];
 
+/**
+ * Fun Facts Data
+ * @type {[*]}
+ */
+var funFacts = [
+    {
+     title: 'Traveling',
+     blurb:  'Traveling and checking out the world is a must! Recent trips include Cuba, Mexico, Republic of Georgia, Spain, Portugal, Colombia.'
+    },
+    {
+        title: 'Austria',
+        blurb: 'I was a researcher at univeristy in Austria for four years, in my computational fluid dynamics phase of lief.  While there I was determined to become fluent in German and started weekly German-learning conversational group for foreigners in Leoben, Austria. Keep up with my German skills via social groups and classes at local community college.'
+    },
+    {
+        title: 'Creativity',
+        blurb: 'Occasional sewer and creator of colorful clothes, jewelery, bags. I thrive on color. The combonation of tech and creativity is why I love web development and design.'
+    },
+    {
+        title: 'Volunteering',
+        blurb: "I'm currently a math tutor volunteer in a San Francisco middle-school, helping kids who are struggling with math meet state education requirements.  I've been a volunteer in many different roles over the years.  Past volunteer experiences: tutor for Women Who Code, high school prep classes for underprivileged kids."
+    },    {
+        title: 'Reading',
+        blurb: 'I have at times been a voracious reader (my mother made me read 100 books in first grade!).  Now I generally divide my reading time between novels, skill improvement books, and <i>The New Yorker</i>.  Some of my favorite recent reads: <i>The Short and Tragic LIfe of Robert Peace</i>, <i>Creativity, Inc.</i>, <i>Beautiful Ruins</i>.'
+    }
+// {
+    //     title: '',
+    //     blurb: ''
+    // },
+    // {
+    //     title: '',
+    //     blurb: ''
+    // },
+    // {
+    //     title: '',
+    //     blurb: ''
+    // }
+];
 
 /**
  * Portfolio data
@@ -286,9 +324,11 @@ var portfolio = {
 };
 
 
+
 exports.app = {
     general: general,
     workExperience: workExperience,
     skills: skills,
+    funFacts: funFacts,
     portfolio: portfolio
 };
