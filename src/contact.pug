@@ -1,0 +1,37 @@
+section#contact.timeline
+    .line.row.timeline-margin
+        .content-wrap
+            .col-md-1.bg1.timeline-space.full-height.hidden-sm.hidden-xs
+            .col-md-2.timeline-progress.hidden-sm.hidden-xs.full-height
+            .col-md-9.bg1.full-height
+    .line.row
+        .col-md-1.bg1.timeline-space.full-height.hidden-sm.hidden-xs
+        .col-md-2.timeline-progress.hidden-sm.hidden-xs.timeline-title.full-height
+        .col-md-8.content-wrap.bg1
+            h2.section-title Contact
+        .col-md-1.bg1.timeline-space.full-height.hidden-sm.hidden-xs
+    .line.row
+        .col-md-1.bg1.timeline-space.full-height.hidden-sm.hidden-xs
+        .col-md-2.timeline-progress.hidden-sm.hidden-xs.full-height.timeline-mail
+        .col-md-8.content-wrap.bg1
+            .line-content.contact-content
+                h3.section-item-title-1 Say hi!
+                .row
+                    .col-md-8.contact-form-wrapper
+                        form#contactForm.form(method='post', role='form')
+                            .form-group
+                                input#name.form-control.required(name='name', placeholder='Name', type='text', required='')
+                            .form-group
+                                input#email.form-control.required(name='email', placeholder='Email', type='email', required='')
+                            .form-group
+                                input#subject.form-control.required(type='text', name='subject', placeholder='Subject', required='')
+                            .form-group
+                                textarea#message.form-control.required(name='message', placeholder='Message', rows='5', required='')
+                            .form-group
+                                input.btn.btn-default.form-send(type='submit', value='Send!')
+                    .col-md-4.contact-infos
+                        h4.contact-subtitle-1 Phone
+                        p +1 415 810 4344
+                        h4.contact-subtitle-1 Email
+                        p autumnfjeld@gmail.com
+        .col-md-1.bg1.timeline-space.full-height.hidden-sm.hidden-xs
