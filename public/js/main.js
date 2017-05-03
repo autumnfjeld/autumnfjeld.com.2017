@@ -77,44 +77,59 @@ $(document).ready(function(){
         $(this).find('p').removeClass('fadeInUp');
     });
 
-    //Contact Form Validator and Ajax Sender
+    //Contact Form Validator and Ajax Sender, Ponder if API key for AWS Gateway API is necessary
     $("#contactForm").validate({
-    submitHandler: function(form) {
-      $.ajax({
-        type: "POST",
-        url: "php/contact-form.php",
-        data: {
-          "name": $("#contactForm #name").val(),
-          "email": $("#contactForm #email").val(),
-          "subject": $("#contactForm #subject").val(),
-          "message": $("#contactForm #message").val()
-        },
-        dataType: "json",
-        success: function (data) {
-          if (data.response == "success") {
-            $('#contactWait').hide();
-            $("#contactSuccess").fadeIn(300);
-            $("#contactError").addClass("hidden");
+        submitHandler: function() {
+            var formData = {
+                "name": $("#contactForm #name").val(),
+                "email": $("#contactForm #email").val(),
+                "subject": $("#contactForm #subject").val(),
+                "message": $("#contactForm #message").val()
+            };
 
-            $("#contactForm #name, #contactForm #email, #contactForm #subject, #contactForm #message")
-              .val("")
-              .blur()
-              .closest(".control-group")
-              .removeClass("success")
-              .removeClass("error");
-            $('label.error').hide();
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST', 'https://z6xpli9nr0.execute-api.us-west-2.amazonaws.com/prod', false);
+            xhr.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
+            var jsonString = JSON.stringify(formData);
+            try{
+                xhr.send(jsonString);
+            }catch(e){
+                alert(e);
+            }
 
-          } else {
-            $('#contactWait').hide();
-            $("#contactError").fadeIn(300);
-            $("#contactSuccess").addClass("hidden");
-          }
-        },
-        beforeSend: function() {
-          $('#contactWait').fadeIn(200);
+          // $.ajax({
+          //   type: "POST",
+          //     cache: false,
+          //   url: "https://z6xpli9nr0.execute-api.us-west-2.amazonaws.com/prod",
+          //   data: JSON.stringify(formData),
+          //     // datatype : "application/json",
+          //     contentType: "application/json",
+          //   dataType: "jsonp",
+          //   success: function (data) {
+          //     if (data.response == "success") {
+          //       $('#contactWait').hide();
+          //       $("#contactSuccess").fadeIn(300);
+          //       $("#contactError").addClass("hidden");
+          //
+          //       $("#contactForm #name, #contactForm #email, #contactForm #subject, #contactForm #message")
+          //         .val("")
+          //         .blur()
+          //         .closest(".control-group")
+          //         .removeClass("success")
+          //         .removeClass("error");
+          //       $('label.error').hide();
+          //
+          //     } else {
+          //       $('#contactWait').hide();
+          //       $("#contactError").fadeIn(300);
+          //       $("#contactSuccess").addClass("hidden");
+          //     }
+          //   },
+          //   beforeSend: function() {
+          //     $('#contactWait').fadeIn(200);
+          //   }
+          // });
         }
-      });
-    }
     });
 
     //Modal for Contact Form
