@@ -78,6 +78,7 @@ $(document).ready(function(){
     });
 
     //Contact Form Validator and Ajax Sender, Ponder if API key for AWS Gateway API is necessary
+    //http://stackoverflow.com/questions/35190615/api-gateway-cors-no-access-control-allow-origin-header
     $("#contactForm").validate({
         submitHandler: function() {
             var formData = {
@@ -87,48 +88,39 @@ $(document).ready(function(){
                 "message": $("#contactForm #message").val()
             };
 
-            var xhr = new XMLHttpRequest();
-            xhr.open('POST', 'https://z6xpli9nr0.execute-api.us-west-2.amazonaws.com/prod', false);
-            xhr.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
-            var jsonString = JSON.stringify(formData);
-            try{
-                xhr.send(jsonString);
-            }catch(e){
-                alert(e);
-            }
+            $.ajax({
+                type: "POST",
+                cache: false,
+                url: "https://z6xpli9nr0.execute-api.us-west-2.amazonaws.com/prod/makeitwork",
+                data: JSON.stringify(formData),
+                contentType: "application/json",
+                // dataType: "json",
+                success: function (data) {
+                    console.log('data', data);
+                    //need to work on passing data back from lamba
+                    if (data.response == "success") {
+                        $('#contactWait').hide();
+                        $("#contactSuccess").fadeIn(300);
+                        $("#contactError").addClass("hidden");
 
-          // $.ajax({
-          //   type: "POST",
-          //     cache: false,
-          //   url: "https://z6xpli9nr0.execute-api.us-west-2.amazonaws.com/prod",
-          //   data: JSON.stringify(formData),
-          //     // datatype : "application/json",
-          //     contentType: "application/json",
-          //   dataType: "jsonp",
-          //   success: function (data) {
-          //     if (data.response == "success") {
-          //       $('#contactWait').hide();
-          //       $("#contactSuccess").fadeIn(300);
-          //       $("#contactError").addClass("hidden");
-          //
-          //       $("#contactForm #name, #contactForm #email, #contactForm #subject, #contactForm #message")
-          //         .val("")
-          //         .blur()
-          //         .closest(".control-group")
-          //         .removeClass("success")
-          //         .removeClass("error");
-          //       $('label.error').hide();
-          //
-          //     } else {
-          //       $('#contactWait').hide();
-          //       $("#contactError").fadeIn(300);
-          //       $("#contactSuccess").addClass("hidden");
-          //     }
-          //   },
-          //   beforeSend: function() {
-          //     $('#contactWait').fadeIn(200);
-          //   }
-          // });
+                        $("#contactForm #name, #contactForm #email, #contactForm #subject, #contactForm #message")
+                          .val("")
+                          .blur()
+                          .closest(".control-group")
+                          .removeClass("success")
+                          .removeClass("error");
+                        $('label.error').hide();
+
+                    } else {
+                        $('#contactWait').hide();
+                        $("#contactError").fadeIn(300);
+                        $("#contactSuccess").addClass("hidden");
+                    }
+                },
+                beforeSend: function() {
+                  $('#contactWait').fadeIn(200);
+                }
+            });
         }
     });
 
@@ -162,7 +154,6 @@ $(window).load(function(){
   setTimeout(function () {
       $( ".full-height" ).each(function() {
         var $stretch = $(this);
-          console.log('this', this, $stretch.closest('.line').find('.content-wrap').outerHeight());
         $stretch.css({ height: $stretch.closest('.line').find('.content-wrap').outerHeight() });
       });  
     }, 300
