@@ -4,13 +4,14 @@
   "description": "Autumn's resume website",
   "main": "index.js",
   "scripts": {
+    "//":  "Ugh clean up the less mess for god's sake",
     "less": "lessc src/less/styles.less public/css/styles.css",
     "watch-less": "catw -c 'lessc -' 'src/less/styles.less' -o public/css/styles.css",
     "//": "Use index.pug as main file,",
-    "watch-pug": "pug -O src/index.js src/index.pug --out public --watch --pretty",
+    "watch-pug": "pug -O src/data.js src/index.pug --out public --watch --pretty",
     "watch-all": "npm run watch-less & npm run watch-pug",
-    "pug": "pug -O src/index.js src/index.pug  public --pretty",
-    "build-pug": "pug public/index.html"
+    "pug": "pug -O src/data.js src/index.pug --out public --pretty",
+    "watch-pugndata": "onchange 'src/data.js' 'src/*.pug' -v -- npm run pug"
   },
   "repository": {
     "type": "git",
@@ -33,6 +34,7 @@
   "devDependencies": {
     "catw": "^1.0.1",
     "less": "^2.7.2",
+    "onchange": "^3.2.1",
     "pug": "^2.0.0-beta11",
     "pug-cli": "^1.0.0-alpha6"
   }
