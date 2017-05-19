@@ -5,13 +5,16 @@
   "main": "index.js",
   "scripts": {
     "//": "Use index.pug as main file,",
-    "less": "lessc src/less/styles.less public/css/styles.css",
-    "watch-less": "catw -c 'lessc -' 'src/less/styles.less' -o public/css/styles.css",
-    "watch-pug": "pug -O src/data.js src/index.pug --out public --watch --pretty",
-    "watch-all": "npm run watch-less & npm run watch-pug",
+    "less": "lessc src/less/main.less public/css/styles.css",
+    "watch-less": "catw -c 'lessc -' 'src/less/main.less' -o public/css/styles.css",
+    "cleancss": "cleancss -o public/css/styles.min.css public/css/styles.css",
     "pug": "pug -O src/data.js src/index.pug --out public --pretty",
+    "watch-pug": "pug -O src/data.js src/index.pug --out public --watch --pretty",
     "watch-pugndata": "onchange 'src/data.js' 'src/*.pug' -v -- npm run pug",
-    "uglify": "uglifyjs src/vendor/jquery-1.11.1.min.js src/vendor/*.js src/main.js -m -o public/build.js"
+    "watch-all": "npm run watch-less & npm run watch-pug",
+    "uglify": "uglifyjs src/vendor/jquery-1.11.1.min.js src/vendor/*.js src/main.js -m -o public/build.js",
+    "//":"next autoprefixer",
+    "build:css": "npm run less & npm run cleancss"
   },
   "repository": {
     "type": "git",
@@ -32,7 +35,11 @@
   },
   "homepage": "autumnfjeld.com",
   "devDependencies": {
+    "bootstrap": "^3.3.7",
     "catw": "^1.0.1",
+    "clean-css": "^4.1.3",
+    "clean-css-cli": "^4.1.3",
+    "cssmin": "^0.4.3",
     "less": "^2.7.2",
     "onchange": "^3.2.1",
     "pug": "^2.0.0-beta11",
