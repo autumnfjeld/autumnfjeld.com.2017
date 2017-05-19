@@ -14,7 +14,8 @@
     "watch-all": "npm run watch-less & npm run watch-pug",
     "uglify": "uglifyjs src/vendor/jquery-1.11.1.min.js src/vendor/*.js src/main.js -m -o public/build.js",
     "//":"next autoprefixer",
-    "build:css": "npm run less & npm run cleancss"
+    "build:css": "npm run less && npm run cleancss",
+    "build:all": "npm run build:css && npm run uglify && npm run pug"
   },
   "repository": {
     "type": "git",

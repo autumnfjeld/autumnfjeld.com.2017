@@ -61,7 +61,7 @@ $(document).ready(function(){
 
 
     //Nivo Lightbox
-    $('a.nivobox').nivoLightbox({ effect: 'fade' });
+    // $('a.nivobox').nivoLightbox({ effect: 'fade' });
 
     //Portfolio Animations
     var portfolioItem = $('.portfolio-item');
