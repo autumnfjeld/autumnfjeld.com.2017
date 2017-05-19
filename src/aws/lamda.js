@@ -1,9 +1,22 @@
+/** This was a bitch to set up, mainly because there are two ways a lambda function can be wired to a API Gateway endpoint
+ * and the documentation doesn't clearly spell this out.
+ * 1) Creating the lamba function and via that UI interface choosing to set up a trigger that is an API Gateway, AWS then
+ * automatically geneartes a LambdaMicroservice API, creates a resource with same name as the lambda func, eg. myLambaFunc,
+ * makes a special 'ANY' method which is all methods that can hit the resource.  With this setup the lambda is set up as a proxy
+ * which I think essntially means there is more 'passthrough' of things happening in the lambda func.  For instance CORS headers
+ * must be set up in the lambda function with this API-lamba wire up.
+ * 2) If you first create a custom API and then through that interface choose to hook it to a lambda function you can choose
+ * to have the lamba as a proxy or not.  If it is like a proxy, then it is similar (or same?) setup as #1 above.  If it is
+ * just 'integrated' then you set up CORS in the API POST, GET etc method.
+ * These two wire-up scenarios make it very difficut to navigate the docs as this is not clearly spelled out!!!!
+ */
+
 var aws = require('aws-sdk');
 var ses = new aws.SES({
     region: 'us-west-2'
 });
 
-
+//This setup is for non-proxy lambda: headers not included here, they are specified in the API endpoint method
 var sendEmail = function(emailDetails, context){
     if( !emailDetails.email) context.fail("Please provide at least an email address");
     console.log("sending email with following details: ", emailDetails)
@@ -49,10 +62,10 @@ exports.handler = function(event, context) {
 };
 
 
-{
+var test = {
     "name": "Groovy Jane",
     "email": "jane@groovy.com",
     "company": "Groovin",
     "subject": "Its all good",
     "message": "Let's get a coffee and discuss design."
-}
+};
