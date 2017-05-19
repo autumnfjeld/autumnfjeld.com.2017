@@ -343,13 +343,13 @@ p {
 	position: fixed;
 	top: 0;
 	left: -250px;
-	width: 250px;
+	width: 200px;
 	height: 100%;
 	background-color: @color3;
 	color: @bgcolor;
 	padding: 60px 22px;
 	z-index: 888;
-	opacity: 0.9;
+	//opacity: 0.9;
 	a {
 		color: @bgcolor;
 	}
@@ -406,13 +406,13 @@ p {
 }
 
 .side-menu-name {
-	border: 2px solid @bgcolor;
+	border: 1px solid @bgcolor;
 	.border-radius(@radius1);
 	color: @bgcolor;
 	opacity: 0.9;
 	text-align: center;
 	font-size: 22px;
-	text-transform: uppercase;
+	text-transform: lowercase;
 	padding-left: 2px;
 	padding-right: 2px;
 	padding-top: 8px;
@@ -511,7 +511,7 @@ p {
 	.border-radius(100%);
 	width: 210px;
 	height: 210px;
-	border: 5px solid @color1;
+	border: 5px solid @color2;  // should match timeline-progress background color
 	overflow: hidden;
 	margin: 0 auto;
 	background: @bgcolor;
@@ -561,7 +561,7 @@ p {
 
 
 .timeline-progress {
-	background: url('../img/timeline-bg.png') repeat-x center center fixed @color1;
+	background: url('../img/timeline-bg.png') repeat-x center center fixed @color2;  //make same color as background
 	position: relative;
 	&:before {
 		content: '';
@@ -1043,7 +1043,8 @@ textarea.form-control {
 	text-align: center;
 	margin-top: 130px;
 	p {
-		color: #fff;
+		//color: #fff;
+		color: @textcolor-light;
 	}
 	.quote {
 		font-size: 22px;

@@ -41,6 +41,20 @@ var nav = {
  */
 var workExperience = [
     {
+        order: 16,
+        company: 'Freelance & Personal Projects',
+        title: 'Website Master of Fun',
+        location:'San Francisco,CA',
+        startDate: 'Then',
+        endDate: 'Always',
+        items: [
+            'Built this site. Purchased the html/css template and made it my own. Broke up the html into pug files, storing my content as json to compile into one nice static site stored on AWS S3.',
+            'Gave AWS Microservices a spin for the contact form at the bottom of this site. Connected my email to this domain in SES and wired up a lambda function to email the form content from my API endpoint to myself.',
+            'Building another static-ish site for a Computational Materials research group at the University of California Riverside utilizing AWS tools: a multi-part site hosted on S3 with Microservices to handle dynamic content. Technical goals for this project include maximizing use of flexbox, using only npm for build tools, creating a smart scripting process to parse <a href="http://www.bibtex.org/Format" target="_blank">bibtex</a> journal listings into interactive html content.',
+            'Improving my design chops.  Currently enrolled in Coursera\'s <a href="https://www.coursera.org/specializations/graphic-design" target="_blank">Graphic Design Specialization</a> created by California Institute of the Arts.'
+        ]
+    },
+    {
         order: 15,
         company: 'Talentbin by Monster',
         title: 'Software Engineer',
@@ -50,9 +64,10 @@ var workExperience = [
         items: [
             'Full-stack software engineer, with front-end emphasis, building and maintaining enterprise recruiting web application. Tech stack: Java, PHP, Javascript (Backbone, Ractive).',
             'Architect new code patterns with modern frameworks to replace, or coexist with, legacy code.',
-            'Building features for a chrome extension app: a mini-version of our main site that pulls data from social network sites to match profiles in our db.',
+            'Building chrome extension app that is a mini-version of our main site which pulls data from social network sites to match profiles in our database.',
             'Helping a growing team migrate from start-up culture to a well-defined agile-scrum work process. Creating documentation, proactively recommend improvements in communication and tools (git, slack, zapier, etc.).',
             'Run team lunch \& learn sessions, motivating team to share technical learnings and challenges.',
+            'Ruthless about getting team members to document their work in our git wiki!',
             'Supervised two computer science interns, guiding them through the complexities of a large codebase and teaching them in first experiences in front-end web development.'
         ]
     },
@@ -293,7 +308,8 @@ var funFacts = [
         blurb: "I'm currently a math tutor volunteer in a San Francisco middle-school, helping kids who are struggling with math meet state education requirements.  I've been a volunteer in many different roles over the years.  Past volunteer experiences: tutor for Women Who Code, high school prep classes for underprivileged kids."
     },    {
         title: 'Reading',
-        blurb: 'I have at times been a voracious reader (my mother made me read 100 books in first grade!).  Now I generally divide my reading time between novels, skill improvement books, and <i>The New Yorker</i>.  Some of my favorite recent reads: <i>The Short and Tragic LIfe of Robert Peace</i>, <i>Creativity, Inc.</i>, <i>Beautiful Ruins</i>.'
+        blurb: 'I have at times been a voracious reader (my mother made me read 100 books in first grade!).  Now I generally divide my reading time between novels, skill improvement books, and <i>The New Yorker</i>.  Some of my favorite recent reads: <i>The Short and Tragic LIfe of Robert Peace</i>, <i>Creativity, Inc.</i>, <i>Beautiful Ruins</i>, <i>Where\'d You Go Bernadette</i>.'
+
     }
 // {
     //     title: '',
