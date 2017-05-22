@@ -9,7 +9,8 @@ html(lang='en')
 
     link(href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700', rel='stylesheet', type='text/css')
     link(rel='stylesheet', href='vendor/font-awesome/css/font-awesome.min.css')
-    link(href='css/styles.css', rel='stylesheet')
+    link(href='css/styles.min.css?v1.0.1', rel='stylesheet')
+    //link(href='css/styles.css', rel='stylesheet')
     //if lt IE 9
       script(src='vendor/html5shiv.js')
       script(src='vendor/respond.min.js')
@@ -32,25 +33,20 @@ html(lang='en')
     include nav.pug
 
     section#content-body.container.animated
-      #intro.row
+      .row
+        // Header color stripes
         .col-md-10.col-sm-10.col-md-offset-2.col-sm-offset-1.clearfix.top-colors
           .top-color.top-color1
           .top-color.top-color4
           .top-color.top-color3
           .top-color.top-color1
           .top-color.top-color4
+        // Begining of content
         .col-md-10.col-sm-10.col-md-offset-2.col-sm-offset-1.resume-container
-          //Header
+          //Header buttons were here, keep as place holder otherwise screws up responsive stuff
           .row
             .header-buttons.col-md-10.col-md-offset-1
-              a.btn.btn-default.btn-top-resume(href='img/Autumn_Fjeld_CV_20170311.pdf', target='_blank"=')
-                i.fa.fa-download
-                |
-                span.btn-hide-text Download my resume
-              a.btn.btn-default.btn-top-message(href='mailto:autumnfjeld@gmail.com')
-                i.fa.fa-envelope-o
-                |
-                span.btn-hide-text Send me a message
+
           include intro.pug
           div.timeline-wrap
             div.timeline-b
@@ -67,4 +63,4 @@ html(lang='en')
               a(href='https://themeforest.net/item/vertica-retina-ready-resume-cv-portfolio/8536870') Vertica
 
 
-    script(src='build.js')
+    script(src='build.js?v1.0.1')

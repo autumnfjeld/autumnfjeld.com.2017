@@ -64,18 +64,18 @@ $(document).ready(function(){
     // $('a.nivobox').nivoLightbox({ effect: 'fade' });
 
     //Portfolio Animations
-    var portfolioItem = $('.portfolio-item');
-    portfolioItem.on('mouseenter', function () {
-        $(this).find('.hover-bg-wrapper').fadeIn(200);
-        $(this).find('.hover').show();
-        $(this).find('p').addClass('animated').addClass('fadeInUp');
-    });
-
-    portfolioItem.on('mouseleave', function () {
-        $(this).find('.hover-bg-wrapper').fadeOut(200);
-        $(this).find('.hover').fadeOut(200);
-        $(this).find('p').removeClass('fadeInUp');
-    });
+    // var portfolioItem = $('.portfolio-item');
+    // portfolioItem.on('mouseenter', function () {
+    //     $(this).find('.hover-bg-wrapper').fadeIn(200);
+    //     $(this).find('.hover').show();
+    //     $(this).find('p').addClass('animated').addClass('fadeInUp');
+    // });
+    //
+    // portfolioItem.on('mouseleave', function () {
+    //     $(this).find('.hover-bg-wrapper').fadeOut(200);
+    //     $(this).find('.hover').fadeOut(200);
+    //     $(this).find('p').removeClass('fadeInUp');
+    // });
 
     //Contact Form Validator and Ajax Sender, Ponder if API key for AWS Gateway API is necessary
     //http://stackoverflow.com/questions/35190615/api-gateway-cors-no-access-control-allow-origin-header

@@ -48,9 +48,9 @@ var workExperience = [
         startDate: 'Then',
         endDate: 'Always',
         items: [
-            'Built this site. Purchased the html/css template and made it my own. Broke up the html into pug files, storing my content as json to compile into one nice static site stored on AWS S3.',
-            'Gave AWS Microservices a spin for the contact form at the bottom of this site. Connected my email to this domain in SES and wired up a lambda function to email the form content from my API endpoint to myself.',
-            'Building another static-ish site for a Computational Materials research group at the University of California Riverside utilizing AWS tools: a multi-part site hosted on S3 with Microservices to handle dynamic content. Technical goals for this project include maximizing use of flexbox, using only npm for build tools, creating a smart scripting process to parse <a href="http://www.bibtex.org/Format" target="_blank">bibtex</a> journal listings into interactive html content.',
+            'Built this site with the help of a pre-designed the html/css template and made it my own, which has been a great learning experience in design and layout. Broke up the html into pug files, storing my content as json to compile into a nice static site stored on AWS S3.',
+            'Gave AWS Microservices a spin for the contact form at the bottom of this site. Connected my email to this domain via <a href="https://aws.amazon.com/ses" target="_blank">Simple Email Service</a> and wired up a <a href="https://aws.amazon.com/lambda" target="_blank">Lambda function</a> to email the form content from my API endpoint to myself.',
+            'Building another static-ish site for a Computational Materials research group at the University of California Riverside utilizing AWS tools: a multi-part site hosted on S3 with Microservices to handle dynamic content. Technical goals for this project include maximizing use of flexbox, using npm for all build steps, creating a smart scripting process to parse <a href="http://www.bibtex.org/Format" target="_blank">bibtex</a> journal listings into interactive html content.',
             'Improving my design chops.  Currently enrolled in Coursera\'s <a href="https://www.coursera.org/specializations/graphic-design" target="_blank">Graphic Design Specialization</a> created by California Institute of the Arts.'
         ]
     },
@@ -82,7 +82,7 @@ var workExperience = [
             'Designed and implemented front-end components of mobile consumer app and two enterprise sites in AngularJS framework. Worked closely with President to design UI/UX.',
             'Collaborated with founding CTO to architect components, maintain build processes (grunt, gulp, git, unix scripts), choose frameworks, modules, and pushed to keep a clean, maintainable code base.',
             'Refactored many parts of chaotic, legacy codebase to maintainability and sanity (SASS, Angular best practices).',
-            'Solved load time problems for large list of images, optimizing quality and performance; continually strove for pixel perfect UI/UX.',
+            'Solved load time problems for large list of images, via ImageMagick script to produce consistent, optimal images and to minimizing image size via imagema optimizing quality and performance, s; continually strove for pixel perfect UI/UX.',
             'Managed collaborations between lead developer and non-technical president, supervised two junior engineers and an assistant to develop her technical graphic design skills.'
         ]
     },
@@ -183,7 +183,7 @@ var skills = [
         ]
     },
     {
-        title: 'Frameworks',
+        title: 'Libraries/Frameworks',
         skills: [
             {
                 id: 1,
@@ -297,11 +297,11 @@ var funFacts = [
     },
     {
         title: 'Austria',
-        blurb: 'I was a researcher at univeristy in Austria for four years, in my computational fluid dynamics phase of lief.  While there I was determined to become fluent in German and started weekly German-learning conversational group for foreigners in Leoben, Austria. Keep up with my German skills via social groups and classes at local community college.'
+        blurb: 'I was a researcher at university in Austria for four years, in my computational fluid dynamics phase of life.  While there I was determined to become fluent in German and started weekly German-learning conversational group for foreigners in Leoben, Austria. I still work to improve my German skills via social groups and classes at a local community college.'
     },
     {
         title: 'Creativity',
-        blurb: 'Occasional sewer and creator of colorful clothes, jewelery, bags. I thrive on color. The combonation of tech and creativity is why I love web development and design.'
+        blurb: 'Occasional sewer and creator of colorful clothes, jewelery, bags. I thrive on color. The combination of tech and creativity is why I love web development and design.'
     },
     {
         title: 'Volunteering',

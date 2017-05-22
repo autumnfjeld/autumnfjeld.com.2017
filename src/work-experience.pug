@@ -1,4 +1,4 @@
-section#works.timeline.work-experience
+section#work-experience.timeline
     .line.row.timeline-margin
         .content-wrap
             .col-md-1.bg1.timeline-space.full-height.hidden-sm.hidden-xs
@@ -21,10 +21,11 @@ section#works.timeline.work-experience
                     h4.job
                         i.fa.fa-cogs
                         span= '  ' +  job.title
-                        span    &middot;
-                        span.job-date= '  ' +    job.location
-                        span   &middot;
-                        span.job-date=  '  ' +   job.startDate + ' - '+ job.endDate
+                        span.hidden-xs    &middot;
+                        span.work-info
+                            span.job-date= ' ' +    job.location
+                            span   &middot;
+                            span.job-date=  '  ' +   job.startDate + ' - '+ job.endDate
                     .job-description
                         ul
                             for item in job.items
