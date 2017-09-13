@@ -12,24 +12,36 @@ section#skills.timeline.skills
         .col-md-1.bg1.timeline-space.full-height.hidden-sm.hidden-xs
     for skillSet in app.skills
         .line.row
-          .col-md-1.bg1.timeline-space.full-height.hidden-sm.hidden-xs
-          .col-md-2.timeline-progress.hidden-sm.hidden-xs.full-height.timeline-point
-          .col-md-8.content-wrap.bg1
-            .line-content
-              h3.section-item-title-1= skillSet.title
-              ul.skills-list
-                for skill in skillSet.skills
-                    li
-                      .progress
-                        .progress-bar(
-                            class='progress-bar-' + skill.id,
-                            data-percent= skill.completed,
-                            role='progressbar',
-                            style='width: '+ skill.completed,
-                            title=skill.toolTip)
-                          span.sr-only= skill.completed + ' Complete'
-                        |
-                        span.progress-type= skill.skill
-                        |
-                        //span.progress-completed= skill.completed
+            .col-md-1.bg1.timeline-space.full-height.hidden-sm.hidden-xs
+            .col-md-2.timeline-progress.hidden-sm.hidden-xs.full-height.timeline-point
+            .col-md-8.content-wrap.bg1
+                .line-content
+                    h3.section-item-title-1= skillSet.title
+                    .skill-set
+                        for skill in skillSet.skills
+                            a(href=skill.link, target="_blank")
+                                span.label(
+                                    class='progress-bar-' + skill.colorId,
+                                    title=skill.toolTip)
+                                    span= skill.skill
+
+                //.line-content
+                //    h3.section-item-title-1= skillSet.title
+                //    ul.skills-list
+                //        for skill in skillSet.skills
+                //            li
+                //                .progress
+                //                    .progress-bar(
+                //                    class='progress-bar-' + skill.id,
+                //                    data-percent= skill.completed,
+                //                    role='progressbar',
+                //                    style='width: ' + skill.completed,
+                //                    title=skill.toolTip)
+                //                        span.sr-only= skill.completed + ' Complete'
+                //                    |
+                //                    span.progress-type= skill.skill
+                //                    |
+                //                    //span.progress-completed= skill.completed
+                //
+
 

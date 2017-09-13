@@ -1,5 +1,9 @@
 var pug = require('pug');
 
+/**
+ * General persona & work data
+ * @type {[*]}
+ */
 var general = {
     firstName: 'Autumn',
     lastName: 'Fjeld',
@@ -31,9 +35,9 @@ var general = {
     introBlurb: 'My dream job is working at the intersection of logical software development and creative design while driving development of an intuitive user interface <i>for the user</i>. Lucky that my day job is coding for <strong> visual pleasure </strong>'
 };
 
-var nav = {
-
-};
+// var nav = {
+//
+// };
 
 /**
  * Work Experience data
@@ -50,7 +54,7 @@ var workExperience = [
         items: [
             'Built this site with the help of a pre-designed the html/css template and made it my own, which has been a great learning experience in design and layout. Broke up the html into pug files, storing my content as json to compile into a nice static site stored on AWS S3.',
             'Gave AWS Microservices a spin for the contact form at the bottom of this site. Connected my email to this domain via <a href="https://aws.amazon.com/ses" target="_blank">Simple Email Service</a> and wired up a <a href="https://aws.amazon.com/lambda" target="_blank">Lambda function</a> to email the form content from my API endpoint to myself.',
-            'Building another static-ish site for a Computational Materials research group at the University of California Riverside utilizing AWS tools: a multi-part site hosted on S3 with Microservices to handle dynamic content. Technical goals for this project include maximizing use of flexbox, using npm for all build steps, creating a smart scripting process to parse <a href="http://www.bibtex.org/Format" target="_blank">bibtex</a> journal listings into interactive html content.',
+            'Building another static-ish site for a Computational Materials research group at the University of California Riverside utilizing AWS tools: a multi-part site hosted on S3 with Microservices to handle dynamic content. Technical goals for this project include maximizing use of flexbox, using npm for all build steps, creating a smart scripting process to parse <a href="http://www.bibtex.org/Format" target="_blank">bibtex</a> journal listings into interactive html content. <a href="https://github.com/autumnfjeld/dralexgreaney" target="_blank">Github repo.</a> ',
             'Improving my design chops.  Currently enrolled in Coursera\'s <a href="https://www.coursera.org/specializations/graphic-design" target="_blank">Graphic Design Specialization</a> created by California Institute of the Arts.'
         ]
     },
@@ -91,8 +95,8 @@ var workExperience = [
         company: 'Hack Reactor',
         title: 'Student',
         location:'San Francisco',
-        startDate: 'Jan 2016',
-        endDate: 'Apr 2016',
+        startDate: 'Jan 2014',
+        endDate: 'Apr 2014',
         items: [
             'Part of a team contracted to develop protype for commercial app. Designed back-end schema in Firebase, chosen for Simplelogin authentication, direct database reference binding.',
             'Built app in AngularJS architecture, ported to mobile with Cordova and styled with Ionic.  Enforced strict modularity in AngularJS controllers and services to create efficient team workflow.',
@@ -103,7 +107,7 @@ var workExperience = [
     {
         order: 12,
         company: 'NUMECA International',
-        title: 'Engineer Consultant',
+        title: 'Engineer \& Consultant',
         location:'San Francisco',
         startDate: 'Nov 2010',
         endDate: 'Apr 2012',
@@ -162,23 +166,33 @@ var skills = [
         skills: [
             {
                 id: 1,
+                colorId: 1,
                 skill: 'HTML5 / CSS3',
                 completed: '80%'
             },
             {
                 id: 2,
+                colorId: 2,
                 skill: 'Javascript',
                 completed: '80%'
             },
             {
                 id: 3,
+                colorId: 3,
                 skill: 'PHP',
                 completed: '40%'
             },
             {
                 id: 4,
+                colorId: 4,
                 skill: 'Java',
                 completed: '30%'
+            },
+            {
+                id: 5,
+                colorId: 1,
+                skill: 'Python',
+                completed: '20%'
             }
         ]
     },
@@ -187,75 +201,158 @@ var skills = [
         skills: [
             {
                 id: 1,
-                skill: 'Angular',
+                colorId: 1,
+                skill: 'AngularJS',
+                link: 'https://angularjs.org/',
                 completed: '80%'
             },
             {
                 id: 2,
+                colorId: 2,
                 skill: 'Backbone',
                 completed: '70%'
             },
             {
                 id: 3,
+                colorId: 3,
                 skill: 'Jasmine/Mocha',
                 completed: '50%'
             },
             {
                 id: 4,
+                colorId: 4,
                 skill: 'jQuery',
                 completed: '80%'
+            },
+            {
+                id: 5,
+                colorId: 1,
+                skill: 'Ractive.js',
+                completed: '70%'
+            },
+            {
+                id: 5,
+                colorId: 2,
+                skill: 'D3.js',
+                completed: '30%'
+            },
+            {
+                id: 6,
+                colorId: 3,
+                skill: 'Yii',
+                completed: '30%'
             }
         ]
     },
     {
-        title: 'Database/Backend',
+        title: 'Database/Backend/Server',
         skills: [
             {
                 id: 1,
+                colorId: 1,
                 skill: 'Mongo',
                 completed: '60%'
             },
             {
                 id: 2,
+                colorId: 2,
                 skill: 'MySQL',
                 completed: '50%'
             },
             {
                 id: 3,
+                colorId: 3,
                 skill: 'Node.js',
                 completed: '55%'
-            },
-            // {
-            //     id: 4,
-            //     skill: 'Java',
-            //     completed: '30%'
-            // }
+            }
         ]
     },
     {
-        title: 'Software Tools',
+        title: 'Software/Tools/Design',
         skills: [
             {
                 id: 1,
+                colorId: 1,
                 skill: 'Sketch',
+                link: 'https://www.sketchapp.com/',
                 completed: '40%',
                 toolTip: 'Using sketch regularly and it is becoming my go-to design tool'
             },
             {
                 id: 2,
+                colorId: 2,
                 skill: 'Adobe Illustrator',
                 completed: '60%'
             },
             {
                 id: 3,
+                colorId: 3,
                 skill: 'Photoshop',
                 completed: '30%'
             },
-            // {
-            //     id: 4,
-            //     skill: 'Java',
-            //     completed: '30%'
-            // }
+            {
+                id: 4,
+                colorId: 4,
+                skill: 'Imagemagick',
+                link: 'http://www.imagemagick.org/',
+                completed: '30%'
+            },
+            {
+                id: 5,
+                colorId: 1,
+                skill: 'GitHub',
+                link: 'http://www.github.com/autumnfjeld',
+                completed: '85%'
+            }
+        ]
+    },
+    {
+        title: 'Amazon Web Services',
+        skills: [
+            {
+                id: 1,
+                colorId: 1,
+                skill: 'SES',
+                completed: '60%'
+            },
+            {
+                id: 2,
+                colorId: 2,
+                skill: 'Lamba Functions',
+                completed: '60%'
+            },
+            {
+                id: 3,
+                colorId: 3,
+                skill: 'API Microservices',
+                completed: '60%'
+            },
+            {
+                id: 4,
+                colorId: 4,
+                skill: 'Route 53',
+                completed: '60%'
+            },
+            {
+                id: 5,
+                colorId: 1,
+                skill: 'Simple Storage Service (S3) ',
+                completed: '60%'
+            },
+            {
+                id: 5,
+                colorId: 2,
+                skill: 'Boto - AWS SDK for Python ',
+                link: 'https://aws.amazon.com/sdk-for-python/',
+                completed: '60%'
+            },
+            {
+                id: 6,
+                colorId: 3,
+                skill: 'Kibana',
+                link: 'https://aws.amazon.com/elasticsearch-service/kibana/',
+                completed: '85%'
+            }
         ]
     },
     {
@@ -263,27 +360,31 @@ var skills = [
         skills: [
             {
                 id: 1,
+                colorId: 1,
                 skill: 'Communication',
                 completed: '95%',
                 toolTip: 'I strive to keep coworkers informed and clearly communicate ideas and documentation'
             },
             {
                 id: 2,
+                colorId: 2,
                 skill: 'Team Player',
                 completed: '90%'
             },
             {
                 id: 3,
+                colorId: 3,
                 skill: 'Confidence',
                 completed: '90%'
             },
             {
                 id: 4,
+                colorId: 4,
                 skill: 'Determination',
                 completed: '99%'
             }
         ]
-    },
+    }
 ];
 
 /**
@@ -308,21 +409,14 @@ var funFacts = [
         blurb: "I'm currently a math tutor volunteer in a San Francisco middle-school, helping kids who are struggling with math meet state education requirements.  I've been a volunteer in many different roles over the years.  Past volunteer experiences: tutor for Women Who Code, high school prep classes for underprivileged kids."
     },    {
         title: 'Reading',
-        blurb: 'I have at times been a voracious reader (my mother made me read 100 books in first grade!).  Now I generally divide my reading time between novels, skill improvement books, and <i>The New Yorker</i>.  Some of my favorite recent reads: <i>The Short and Tragic LIfe of Robert Peace</i>, <i>Creativity, Inc.</i>, <i>Beautiful Ruins</i>, <i>Where\'d You Go Bernadette</i>.'
+        blurb: 'I have been a voracious reader at times (my mother made me read 100 books in first grade!).  Now I generally divide my reading time between novels, skill improvement books, and <i>The New Yorker</i>.  Some of my favorite recent reads: <i>The Short and Tragic LIfe of Robert Peace</i>, <i>Creativity, Inc.</i>, <i>Beautiful Ruins</i>, <i>Where\'d You Go Bernadette</i>.'
 
     }
 // {
     //     title: '',
     //     blurb: ''
     // },
-    // {
-    //     title: '',
-    //     blurb: ''
-    // },
-    // {
-    //     title: '',
-    //     blurb: ''
-    // }
+
 ];
 
 /**
