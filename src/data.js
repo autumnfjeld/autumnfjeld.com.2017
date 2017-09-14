@@ -9,7 +9,7 @@ var general = {
     lastName: 'Fjeld',
     email: 'autumnfjeld@gmail.com',
     careerTitle: 'Software Engineer / Web Developer',
-    resumeLink: 'img/Autumn_Fjeld_CV_20170311.pdf',
+    resumeLink: 'img/Autumn_Fjeld_Resume_20170913.pdf',
     webProfiles: {
         linkedIn: {
             url: 'https://www.linkedin.com/in/autumnfjeld',
@@ -303,7 +303,28 @@ var skills = [
                 skill: 'GitHub',
                 link: 'http://www.github.com/autumnfjeld',
                 completed: '85%'
-            }
+            },
+            {
+                id: 6,
+                colorId: 2,
+                skill: 'Gulp/Grunt',
+                // link: 'http://www.github.com/autumnfjeld',
+                completed: '85%'
+            },
+            {
+                id: 7,
+                colorId: 3,
+                skill: 'NPM as build tool',
+                link: 'https://github.com/autumnfjeld/dralexgreaney',
+                completed: '85%'
+            },
+            {
+                id: 8,
+                colorId: 4,
+                skill: 'Latex',
+                link: 'https://www.latex-project.org',
+                completed: '85%'
+            },
         ]
     },
     {
