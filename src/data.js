@@ -325,6 +325,13 @@ var skills = [
                 link: 'https://www.latex-project.org',
                 completed: '85%'
             },
+            {
+                id: 9,
+                colorId: 1,
+                skill: 'Google Analytics',
+                link: 'https://analytics.google.com',
+                completed: '85%'
+            },
         ]
     },
     {
