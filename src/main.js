@@ -41,23 +41,23 @@ $(document).ready(function(){
     });
 
     //Bxslider -see options at http://bxslider.com/
-    $('.portfolio-itens').bxSlider({
-      slideWidth: 200,
-      minSlides: 1,
-      maxSlides: 4,
-      moveSlides: 1,
-      slideMargin: 5,
-      auto: false,
-      mode: 'horizontal',
-      useCSS: false,
-      speed: 900,
-      infiniteLoop: false,
-      hideControlOnEnd: true,
-      easing: 'easeOutElastic',
-      pager: false,
-      prevText: '<i class="fa fa-chevron-left"></i>',
-      nextText: '<i class="fa fa-chevron-right"></i>'
-    });
+    // $('.portfolio-items').bxSlider({
+    //   slideWidth: 200,
+    //   minSlides: 1,
+    //   maxSlides: 4,
+    //   moveSlides: 1,
+    //   slideMargin: 5,
+    //   auto: false,
+    //   mode: 'horizontal',
+    //   useCSS: false,
+    //   speed: 900,
+    //   infiniteLoop: false,
+    //   hideControlOnEnd: true,
+    //   easing: 'easeOutElastic',
+    //   pager: false,
+    //   prevText: '<i class="fa fa-chevron-left"></i>',
+    //   nextText: '<i class="fa fa-chevron-right"></i>'
+    // });
 
 
     //Nivo Lightbox
