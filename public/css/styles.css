@@ -2,7 +2,7 @@
 /**
  * Main less file to bring together all sytle files
  * TODO:  use autoprefixer and take any vendor prefixes out of exiting style files
- * Usee bootstrap's less files, not compiled css
+ * Use bootstrap's less files, not compiled css
  *
  */
 /*!
@@ -10206,7 +10206,7 @@ p {
   padding-top: 15px;
 }
 .resume-container {
-  background: url('../img/paper-bg2.png') no-repeat top left, url('../img/paper-bg-bot.png') no-repeat bottom right, #fafafa;
+  background: url('../media/paper-bg2.png') no-repeat top left, url('../media/paper-bg-bot.png') no-repeat bottom right, #fafafa;
 }
 /* ==========================================================
 ! 7. Profile intro
@@ -10281,7 +10281,7 @@ p {
   background: #fafafa;
 }
 .timeline-progress {
-  background: url('../img/timeline-bg.png') repeat-x center center fixed #3b658a;
+  background: url('../media/timeline-bg.png') repeat-x center center fixed #3b658a;
   position: relative;
 }
 .timeline-progress:before {
@@ -10292,27 +10292,27 @@ p {
   top: 0;
   width: 100%;
   height: 100%;
-  background: url('../img/progress-bar.png') repeat-y center;
+  background: url('../media/progress-bar.png') repeat-y center;
   background-size: 400px 9px;
 }
 .timeline-point:before {
-  background: url('../img/progress-point.png') center center;
+  background: url('../media/progress-point.png') center center;
   background-size: 400px 500px;
 }
 .timeline-education:before {
-  background: url('../img/progress-education4.png') no-repeat center center;
+  background: url('../media/progress-education4.png') no-repeat center center;
   background-size: 400px 500px;
 }
 .timeline-work:before {
-  background: url('../img/progress-work3.png') no-repeat center center;
+  background: url('../media/progress-work3.png') no-repeat center center;
   background-size: 400px 500px;
 }
 .timeline-mail:before {
-  background: url('../img/progress-mail3.png') no-repeat center center;
+  background: url('../media/progress-mail3.png') no-repeat center center;
   background-size: 400px 500px;
 }
 .timeline-title:before {
-  background: url('../img/progress-section-title3.png') no-repeat center center;
+  background: url('../media/progress-section-title3.png') no-repeat center center;
   background-size: 400px 500px;
 }
 .timeline-margin .content-wrap {

@@ -36,7 +36,7 @@ Primary use:	CV / Resume
 
 body {
 	.font1;
-	//background-image: url('../img/background2.jpg');
+	//background-image: url('../media/background2.jpg');
 	//background: #111;
 	background-attachment: fixed;
 	background-repeat: repeat-x;
@@ -502,8 +502,8 @@ p {
 
 
 .resume-container {
-	background: url('../img/paper-bg2.png') no-repeat top left,
-	url('../img/paper-bg-bot.png') no-repeat bottom right, @bgcolor;
+	background: url('../media/paper-bg2.png') no-repeat top left,
+	url('../media/paper-bg-bot.png') no-repeat bottom right, @bgcolor;
 }
 
 /* ==========================================================
@@ -573,7 +573,7 @@ p {
 .timeline-bg {
 	background: @bgcolor;
 	@media @laptop {
-		//background: url('../img/timeline-bg.png') repeat-x center center fixed @color1;
+		//background: url('../media/timeline-bg.png') repeat-x center center fixed @color1;
 	}
 }
 
@@ -586,7 +586,7 @@ p {
 // other timeline images use with their psuedo element image overriding the progress-bar
 .timeline-progress {
     //noinspection CssUnknownTarget
-    background: url('../img/timeline-bg.png') repeat-x center center fixed @color2;  //make same color as background
+    background: url('../media/timeline-bg.png') repeat-x center center fixed @color2;  //make same color as background
 	position: relative;
 	&:before {
 		content: '';
@@ -596,7 +596,7 @@ p {
 		top: 0;
 		width: 100%;
 		height: 100%;
-		background: url('../img/progress-bar.png') repeat-y center;  //tiny verticla line repeated over
+		background: url('../media/progress-bar.png') repeat-y center;  //tiny verticla line repeated over
 		background-size: 400px 9px;
 	}
 
@@ -605,28 +605,28 @@ p {
 // these overlap the timeline bar, but i'm not sure why they take precedence
 .timeline-point {
 	&:before {
-		background: url('../img/progress-point.png') center center;
+		background: url('../media/progress-point.png') center center;
 		background-size: 400px 500px;
 	}
 }
 
 .timeline-education {
 	&:before {
-		background: url('../img/progress-education4.png') no-repeat center center;
+		background: url('../media/progress-education4.png') no-repeat center center;
 		background-size: 400px 500px;
 	}
 }
 
 .timeline-work {
 	&:before {
-		background: url('../img/progress-work3.png') no-repeat center center;
+		background: url('../media/progress-work3.png') no-repeat center center;
 		background-size: 400px 500px;
 	}
 }
 
 .timeline-mail {
 	&:before {
-		background: url('../img/progress-mail3.png') no-repeat center center;
+		background: url('../media/progress-mail3.png') no-repeat center center;
 		background-size: 400px 500px;
 	}
 }
@@ -634,7 +634,7 @@ p {
 
 .timeline-title {
 	&:before {
-		background: url('../img/progress-section-title3.png') no-repeat center center;
+		background: url('../media/progress-section-title3.png') no-repeat center center;
 		background-size: 400px 500px;
 	}
 }
@@ -685,7 +685,6 @@ p {
 	padding-bottom: 10px;
 	@media @laptop {
 		min-height: 90px;
-		//padding-bottom: 40px;
 	}
 }
 
