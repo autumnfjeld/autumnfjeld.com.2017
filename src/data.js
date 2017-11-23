@@ -2,14 +2,14 @@ var pug = require('pug');
 
 /**
  * General persona & work data
- * @type {[*]}
+ * @type {Object}
  */
 var general = {
     firstName: 'Autumn',
     lastName: 'Fjeld',
     email: 'autumnfjeld@gmail.com',
     careerTitle: 'Software Engineer / Web Developer',
-    resumeLink: 'img/Autumn_Fjeld_Resume_20170913.pdf',
+    resumeLink: 'media/Autumn_Fjeld_Resume_20170913.pdf',
     webProfiles: {
         linkedIn: {
             url: 'https://www.linkedin.com/in/autumnfjeld',
@@ -41,7 +41,7 @@ var general = {
 
 /**
  * Work Experience data
- * @type {[*]}
+ * @type {Object}
  */
 var workExperience = [
     {
@@ -417,7 +417,7 @@ var skills = [
 
 /**
  * Fun Facts Data
- * @type {[*]}
+ * @type {Object}
  */
 var funFacts = [
     {
@@ -455,8 +455,8 @@ var portfolio = {
     title1: 'This is title1',
     title2: 'title2',
     img: {
-        primary: 'img/portfolio-item-zoom.jpg',
-        thumb:'img/portfolio-item-thumb.jpg',
+        primary: 'media/portfolio-item-zoom.jpg',
+        thumb:'media/portfolio-item-thumb.jpg',
         title: 'Image title'
     }
 };
