@@ -9,7 +9,7 @@ var general = {
     lastName: 'Fjeld',
     email: 'autumnfjeld@gmail.com',
     careerTitle: 'Software Engineer / Web Developer',
-    resumeLink: 'media/Autumn_Fjeld_Resume_20170913.pdf',
+    resumeLink: 'media/Autumn_Fjeld_Resume_20171123.pdf',
     webProfiles: {
         linkedIn: {
             url: 'https://www.linkedin.com/in/autumnfjeld',
