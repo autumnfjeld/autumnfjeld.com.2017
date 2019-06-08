@@ -61,15 +61,15 @@ var workExperience = [
     {
         order: 16,
         company: 'Freelance & Personal Projects',
-        title: 'Website Master of Fun',
+        title: 'Lifelong learner',
         location: 'San Francisco,CA',
         startDate: 'Then',
         endDate: 'Always',
         items: [
-            'Built this site with the help of a pre-designed the html/css template and made it my own, which has been a great learning experience in design and layout. Broke up the html into pug files, storing my content as json to compile into a nice static site stored on AWS S3.',
+            'Built this site (2017) with a pre-designed html/css template, a great learning experience in design and layout. Broke up the html into pug files, storing my content as json to compile into a nice static site stored on AWS S3.',
             'Gave AWS Microservices a spin for the contact form at the bottom of this site. Connected my email to this domain via <a href="https://aws.amazon.com/ses" target="_blank">Simple Email Service</a> and wired up a <a href="https://aws.amazon.com/lambda" target="_blank">Lambda function</a> to email the form content from my API endpoint to myself.',
-            'Building another static-ish site for a Computational Materials research group at the University of California Riverside utilizing AWS tools: a multi-part site hosted on S3 with Microservices to handle dynamic content. Technical goals for this project include maximizing use of flexbox, using npm for all build steps, creating a smart scripting process to parse <a href="http://www.bibtex.org/Format" target="_blank">bibtex</a> journal listings into interactive html content. <a href="https://github.com/autumnfjeld/dralexgreaney" target="_blank">Github repo.</a> ',
-            'Improving my design chops.  Currently enrolled in Coursera\'s <a href="https://www.coursera.org/specializations/graphic-design" target="_blank">Graphic Design Specialization</a> created by California Institute of the Arts.'
+            'Built a site for a Computational Materials research group at the University of California Riverside utilizing AWS tools: a multi-part site hosted on S3 with Microservices to handle dynamic content. Technical goals for this project included maximizing use of flexbox, using npm for all build steps, creating a scripting process to parse <a href="http://www.bibtex.org/Format" target="_blank">bibtex</a> journal listings into interactive html content. <a href="https://github.com/autumnfjeld/dralexgreaney" target="_blank">Github repo.</a> ',
+            'Improving my design chops.  Enrolled in Coursera\'s <a href="https://www.coursera.org/specializations/graphic-design" target="_blank">Graphic Design Specialization</a> created by California Institute of the Arts.'
         ]
     },
     {
@@ -78,7 +78,7 @@ var workExperience = [
         title: 'Software Engineer',
         location: 'San Francisco, CA',
         startDate: 'Apr 2016',
-        endDate: 'Present',
+        endDate: 'Nov 2018',
         items: [
             'Full-stack software engineer, with front-end emphasis, building and maintaining enterprise recruiting web application. Tech stack: Java, PHP, Javascript (Backbone, Ractive).',
             'Architect new code patterns with modern frameworks to replace, or coexist with, legacy code.',
@@ -100,7 +100,7 @@ var workExperience = [
             'Designed and implemented front-end components of mobile consumer app and two enterprise sites in AngularJS framework. Worked closely with President to design UI/UX.',
             'Collaborated with founding CTO to architect components, maintain build processes (grunt, gulp, git, unix scripts), choose frameworks, modules, and pushed to keep a clean, maintainable code base.',
             'Refactored many parts of chaotic, legacy codebase to maintainability and sanity (SASS, Angular best practices).',
-            'Solved load time problems for large list of images, via ImageMagick script to produce consistent, optimal images and to minimizing image size via imagema optimizing quality and performance, s; continually strove for pixel perfect UI/UX.',
+            'Solved load time problems for large list of images, via ImageMagick script to produce uniform images, at the right balance of size and quality for optimal page performance. Continually strove for pixel perfect UI/UX.',
             'Managed collaborations between lead developer and non-technical president, supervised two junior engineers and an assistant to develop her technical graphic design skills.'
         ]
     },
@@ -112,7 +112,7 @@ var workExperience = [
         startDate: 'Jan 2014',
         endDate: 'Apr 2014',
         items: [
-            'Part of a team contracted to develop protype for commercial app. Designed back-end schema in Firebase, chosen for Simplelogin authentication, direct database reference binding.',
+            'Part of a team contracted to develop prototype for commercial app. Designed back-end schema in Firebase, chosen for simple login authentication, direct database reference binding.',
             'Built app in AngularJS architecture, ported to mobile with Cordova and styled with Ionic.  Enforced strict modularity in AngularJS controllers and services to create efficient team workflow.',
             'Built a d3.js interactive force directed graph as an AngularJS directive, allowing users to click on a url-node to create an expansive node map of Wikipedia articles. <a href="http://wikiviz.herokuapp.com" target="_blank">Wikiviz</a>'
             // '#[a(href="http://wikiviz.herokuapp.com") Wikiviz]    #{#[a link](http://example.com)}}',
