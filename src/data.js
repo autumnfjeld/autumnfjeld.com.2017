@@ -52,9 +52,9 @@ var workExperience = [
             'I create products and prototypes for ustwo clients as a product engineer in cross-functional teams of coaches, designers, and engineers.',
 
             '<a href="https://create.withgoogle.com/" target="_blank">Create with Google</a>: part of founding product team that launched Create with Google suite of products. Responsible for the <a href="https://create.withgoogle.com/" target="_blank">website</a> and <a href="https://create.withgoogle.com/youtubemockuptool" target="_blank">YouTube Mockup Tool</a>. Working in a cross functional team, under intense deadlines, and within the security and technical standards set by Google.  <br> I\'ve worn many hats over the last year of the project: sole full-stack dev on the Mockup Tool, dev lead on CMSification & improvement of the website, stakeholder management in guiding tech & feature decisions, on-boarding new ustwobies in agile process and QA. <br>  Website Stack: GAE, python/jinja/webapp. <br>  MockupTool stack: GAE, python/webapp, Angular6. <br>  Version 2 of our products going live in June 2019!! Thrilling project to be on!',
-            
+
             '<a href="https://www.cochlear.com" target="_blank">Cochlear</a>: worked on "CoPilot", a pilot app designed to make use of hearing implant data to assist recipients in maximizing functionality of their implants for optimal hearing. In charge of python back-end, data crunching, and shepherding through AWS security architecture per Cochlear and regulatory standards.',
-            
+
             '<a href="https://www.bluecats.com/" target="_blank">BlueCats</a>: part of small design/build team building new website (not yet deployed). Was sole engineer responsibility for all technical decisions: tech stack, build pipeline, and hosting. Site built in Angular7, hosted on Netlify, with Contentful CMS.'
         ]
     },
@@ -179,7 +179,7 @@ var skills = [
         title: 'Languages',
         skills: [
             {
-                id: 1,
+                id: 15,
                 colorId: 1,
                 skill: 'HTML5 / CSS3',
                 completed: '80%'
@@ -191,19 +191,25 @@ var skills = [
                 completed: '80%'
             },
             {
-                id: 3,
+                id: 10,
+                colorId: 2,
+                skill: 'TypeScript',
+                completed: '80%'
+            },
+            {
+                id: 60,
                 colorId: 3,
                 skill: 'PHP',
                 completed: '40%'
             },
             {
-                id: 4,
+                id: 50,
                 colorId: 4,
                 skill: 'Java',
                 completed: '30%'
             },
             {
-                id: 5,
+                id: 20,
                 colorId: 1,
                 skill: 'Python',
                 completed: '20%'
@@ -221,39 +227,58 @@ var skills = [
                 completed: '80%'
             },
             {
-                id: 2,
+                id: 10,
+                colorId: 1,
+                skill: 'Angular6+',
+                link: 'https://angularjs.org/',
+                completed: '80%'
+            },
+            {
+                id: 20,
+                colorId: 4,
+                skill: 'React',
+                completed: '80%'
+            },
+            {
+                id: 30,
                 colorId: 2,
                 skill: 'Backbone',
                 completed: '70%'
             },
             {
-                id: 3,
+                id: 40,
                 colorId: 3,
                 skill: 'Jasmine/Mocha',
                 completed: '50%'
             },
             {
-                id: 4,
+                id: 50,
                 colorId: 4,
                 skill: 'jQuery',
                 completed: '80%'
             },
             {
-                id: 5,
+                id: 60,
                 colorId: 1,
                 skill: 'Ractive.js',
                 completed: '70%'
             },
             {
-                id: 5,
+                id: 35,
                 colorId: 2,
                 skill: 'D3.js',
                 completed: '30%'
             },
             {
-                id: 6,
+                id: 70,
                 colorId: 3,
                 skill: 'Yii',
+                completed: '30%'
+            },
+            {
+                id: 12,
+                colorId: 3,
+                skill: 'Jinja/Django',
                 completed: '30%'
             }
         ]
@@ -278,6 +303,24 @@ var skills = [
                 colorId: 3,
                 skill: 'Node.js',
                 completed: '55%'
+            },
+            {
+                id: 4,
+                colorId: 4,
+                skill: 'webapp2',
+                completed: '70%'
+            },
+            {
+                id: 5,
+                colorId: 5,
+                skill: 'Google App Engine',
+                completed: '70%'
+            },
+            {
+                id: 12,
+                colorId: 6,
+                skill: 'Flask',
+                completed: '30%'
             }
         ]
     },
@@ -403,7 +446,7 @@ var skills = [
             {
                 id: 1,
                 colorId: 1,
-                skill: 'Communication',
+                skill: 'Communicator',
                 completed: '95%',
                 toolTip: 'I strive to keep coworkers informed and clearly communicate ideas and documentation'
             },
@@ -416,13 +459,19 @@ var skills = [
             {
                 id: 3,
                 colorId: 3,
-                skill: 'Confidence',
+                skill: 'Driven',
                 completed: '90%'
             },
             {
                 id: 4,
                 colorId: 4,
-                skill: 'Determination',
+                skill: 'Determined',
+                completed: '99%'
+            },
+            {
+                id: 4,
+                colorId: 1,
+                skill: 'Fun!',
                 completed: '99%'
             }
         ]
@@ -444,11 +493,11 @@ var funFacts = [
     },
     {
         title: 'Creativity',
-        blurb: 'Occasional sewer and creator of colorful clothes, jewelery, bags. I thrive on color. The combination of tech and creativity is why I love web development and design.'
+        blurb: 'Occasional sewer and creator of colorful clothes, jewelry, bags. I thrive on color. The combination of tech and creativity is why I love web development and design.'
     },
     {
         title: 'Volunteering',
-        blurb: "I'm currently a math tutor volunteer in a San Francisco middle-school, helping kids who are struggling with math meet state education requirements.  I've been a volunteer in many different roles over the years.  Past volunteer experiences: tutor for Women Who Code, high school prep classes for underprivileged kids."
+        blurb: "I've been a math tutor volunteer in a San Francisco middle-school, helping kids who are struggling with math meet state education requirements.  I've been a volunteer in many different roles over the years.  Past volunteer experiences: tutor for Women Who Code, high school prep classes for underprivileged kids."
     }, {
         title: 'Reading',
         blurb: 'I have been a voracious reader at times (my mother made me read 100 books in first grade!).  Now I generally divide my reading time between novels, skill improvement books, and <i>The New Yorker</i>.  Some of my favorite recent reads: <i>The Short and Tragic LIfe of Robert Peace</i>, <i>Creativity, Inc.</i>, <i>Beautiful Ruins</i>, <i>Where\'d You Go Bernadette</i>.'
@@ -470,7 +519,7 @@ var portfolio = {
     title2: 'title2',
     img: {
         primary: 'media/portfolio-item-zoom.jpg',
-        thumb:'media/portfolio-item-thumb.jpg',
+        thumb: 'media/portfolio-item-thumb.jpg',
         title: 'Image title'
     }
 };
