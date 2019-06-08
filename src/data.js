@@ -8,7 +8,7 @@ var general = {
     firstName: 'Autumn',
     lastName: 'Fjeld',
     email: 'autumnfjeld@gmail.com',
-    careerTitle: 'Full Stack Web Developer',
+    careerTitle: 'Full Stack Product Engineer',
     resumeLink: 'media/Autumn_Fjeld_Resume_20171123.pdf',
     webProfiles: {
         linkedIn: {
@@ -24,7 +24,7 @@ var general = {
             icon: 'fa-github'
         },
         currentJob: {
-            url: 'https://www.talentbin.com/team',
+            url: 'https://www.ustwo.com',
             icon: 'fa-user'
         },
         email: {
@@ -32,12 +32,9 @@ var general = {
             icon: 'fa-paper-plane-o'
         }
     },
-    introBlurb: 'My dream job is working at the intersection of logical software development and creative design while driving development of an intuitive user interface <i>for the user</i>. Lucky that my day job is coding for <strong> visual pleasure </strong>'
+    // introBlurb: "What can I build for you!?"
 };
 
-// var nav = {
-//
-// };
 
 /**
  * Work Experience data
