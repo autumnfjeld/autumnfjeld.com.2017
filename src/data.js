@@ -8,7 +8,7 @@ var general = {
     firstName: 'Autumn',
     lastName: 'Fjeld',
     email: 'autumnfjeld@gmail.com',
-    careerTitle: 'Software Engineer / Web Developer',
+    careerTitle: 'Full Stack Web Developer',
     resumeLink: 'media/Autumn_Fjeld_Resume_20171123.pdf',
     webProfiles: {
         linkedIn: {
@@ -48,7 +48,7 @@ var workExperience = [
         order: 16,
         company: 'Freelance & Personal Projects',
         title: 'Website Master of Fun',
-        location:'San Francisco,CA',
+        location: 'San Francisco,CA',
         startDate: 'Then',
         endDate: 'Always',
         items: [
@@ -62,7 +62,7 @@ var workExperience = [
         order: 15,
         company: 'Talentbin by Monster',
         title: 'Software Engineer',
-        location:'San Francisco, CA',
+        location: 'San Francisco, CA',
         startDate: 'Apr 2016',
         endDate: 'Present',
         items: [
@@ -79,7 +79,7 @@ var workExperience = [
         order: 14,
         company: 'Ziploop',
         title: 'Software Engineer',
-        location:'Orinda, CA',
+        location: 'Orinda, CA',
         startDate: 'Apr 2014',
         endDate: 'Apr 2016',
         items: [
@@ -94,7 +94,7 @@ var workExperience = [
         order: 13,
         company: 'Hack Reactor',
         title: 'Student',
-        location:'San Francisco',
+        location: 'San Francisco',
         startDate: 'Jan 2014',
         endDate: 'Apr 2014',
         items: [
@@ -108,11 +108,11 @@ var workExperience = [
         order: 12,
         company: 'NUMECA International',
         title: 'Engineer \& Consultant',
-        location:'San Francisco',
+        location: 'San Francisco',
         startDate: 'Nov 2010',
         endDate: 'Apr 2012',
         items: [
-                "Provided consulting support to engineers at Boeing, Honeywell, etc. on using NUMECA’s computational fluid dynamics software tools, delivering solutions in meshing, solver setup, and post-processing.",
+            "Provided consulting support to engineers at Boeing, Honeywell, etc. on using NUMECA’s computational fluid dynamics software tools, delivering solutions in meshing, solver setup, and post-processing.",
             'Improved fluid dynamics and meshing software as an integral part of the feedback loop for identifying and troubleshooting software bugs, user-friendliness, and scientific accuracy issues.',
             "Created and delivered technical training webinars twice a month to NUMECA’s user base."
         ]
@@ -121,7 +121,7 @@ var workExperience = [
         order: 11,
         company: 'Freelance Editor for Scientific Manuscripts',
         title: 'English Editor ',
-        location:'Global',
+        location: 'Global',
         startDate: '2010',
         endDate: '2014',
         items: [
@@ -133,7 +133,7 @@ var workExperience = [
         order: 10,
         company: 'University Of Leoben, Austria',
         title: 'Post Doctoral Researcher',
-        location:'Leoben, Austria',
+        location: 'Leoben, Austria',
         startDate: 'Jun 2006',
         endDate: 'Nov 2010',
         items: [
@@ -421,8 +421,8 @@ var skills = [
  */
 var funFacts = [
     {
-     title: 'Traveling',
-     blurb:  'Traveling and checking out the world is a must! Recent trips include Cuba, Mexico, Republic of Georgia, Spain, Portugal, Colombia.'
+        title: 'Traveling',
+        blurb: 'Traveling and checking out the world is a must! Recent trips include Cuba, Mexico, Republic of Georgia, Spain, Portugal, Colombia.'
     },
     {
         title: 'Austria',
@@ -435,12 +435,12 @@ var funFacts = [
     {
         title: 'Volunteering',
         blurb: "I'm currently a math tutor volunteer in a San Francisco middle-school, helping kids who are struggling with math meet state education requirements.  I've been a volunteer in many different roles over the years.  Past volunteer experiences: tutor for Women Who Code, high school prep classes for underprivileged kids."
-    },    {
+    }, {
         title: 'Reading',
         blurb: 'I have been a voracious reader at times (my mother made me read 100 books in first grade!).  Now I generally divide my reading time between novels, skill improvement books, and <i>The New Yorker</i>.  Some of my favorite recent reads: <i>The Short and Tragic LIfe of Robert Peace</i>, <i>Creativity, Inc.</i>, <i>Beautiful Ruins</i>, <i>Where\'d You Go Bernadette</i>.'
 
     }
-// {
+    // {
     //     title: '',
     //     blurb: ''
     // },
