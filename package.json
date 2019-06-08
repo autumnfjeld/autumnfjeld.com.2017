@@ -47,5 +47,8 @@
     "pug": "^2.0.0-beta11",
     "pug-cli": "^1.0.0-alpha6",
     "uglify-js": "^3.0.8"
+  },
+  "dependencies": {
+    "eslint": "^5.16.0"
   }
 }
