@@ -485,7 +485,7 @@ var skills = [
 var funFacts = [
     {
         title: 'Traveling',
-        blurb: 'Traveling and checking out the world is a must! Recent trips include Cuba, Mexico, Republic of Georgia, Spain, Portugal, Colombia.'
+        blurb: 'I lived on four continents and love to learn about people and culture. Traveling and checking out the world is a must for me! Recent trips include Bali, New Zealand, Cuba, Mexico, Republic of Georgia, Spain, Portugal, Colombia.'
     },
     {
         title: 'Austria',
