@@ -42,6 +42,23 @@ var general = {
  */
 var workExperience = [
     {
+        order: 18,
+        company: 'ustwo',
+        title: 'Full stack Product Engineer',
+        location: 'Sydney, Australia',
+        startDate: 'Jan 2018',
+        endDate: 'Present',
+        items: [
+            'I create products and prototypes for ustwo clients as a product engineer in cross-functional teams of coaches, designers, and engineers.',
+
+            '<a href="https://create.withgoogle.com/" target="_blank">Create with Google</a>: part of founding product team that launched Create with Google suite of products. Responsible for the <a href="https://create.withgoogle.com/" target="_blank">website</a> and <a href="https://create.withgoogle.com/youtubemockuptool" target="_blank">YouTube Mockup Tool</a>. Working in a cross functional team, under intense deadlines, and within the security and technical standards set by Google.  <br> I\'ve worn many hats over the last year of the project: sole full-stack dev on the Mockup Tool, dev lead on CMSification & improvement of the website, stakeholder management in guiding tech & feature decisions, on-boarding new ustwobies in agile process and QA. <br>  Website Stack: GAE, python/jinja/webapp. <br>  MockupTool stack: GAE, python/webapp, Angular6. <br>  Version 2 of our products going live in June 2019!! Thrilling project to be on!',
+            
+            '<a href="https://www.cochlear.com" target="_blank">Cochlear</a>: worked on "CoPilot", a pilot app designed to make use of hearing implant data to assist recipients in maximizing functionality of their implants for optimal hearing. In charge of python back-end, data crunching, and shepherding through AWS security architecture per Cochlear and regulatory standards.',
+            
+            '<a href="https://www.bluecats.com/" target="_blank">BlueCats</a>: part of small design/build team building new website (not yet deployed). Was sole engineer responsibility for all technical decisions: tech stack, build pipeline, and hosting. Site built in Angular7, hosted on Netlify, with Contentful CMS.'
+        ]
+    },
+    {
         order: 16,
         company: 'Freelance & Personal Projects',
         title: 'Website Master of Fun',
