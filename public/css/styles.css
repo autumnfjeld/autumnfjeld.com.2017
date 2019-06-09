@@ -10220,6 +10220,9 @@ p {
   .profile-intro {
     height: 245px;
   }
+  .profile-intro .intro-title1 {
+    margin-top: 44px;
+  }
 }
 .profile-pic {
   text-align: center;
