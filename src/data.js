@@ -8,7 +8,7 @@ var general = {
     firstName: 'Autumn',
     lastName: 'Fjeld',
     email: 'autumnfjeld@gmail.com',
-    careerTitle: 'Full Stack Product Engineer',
+    careerTitle: 'Full-stack Product Engineer',
     resumeLink: 'media/Autumn_Fjeld_Resume_20171123.pdf',
     webProfiles: {
         linkedIn: {
@@ -44,7 +44,7 @@ var workExperience = [
     {
         order: 18,
         company: 'ustwo',
-        title: 'Full stack Product Engineer',
+        title: 'Full-stack Product Engineer',
         location: 'Sydney, Australia',
         startDate: 'Jan 2018',
         endDate: 'Present',
@@ -68,8 +68,8 @@ var workExperience = [
         startDate: 'Then',
         endDate: 'Always',
         items: [
-            'Built this site (2017) with a pre-designed html/css template, a great learning experience in design and layout. Broke up the html into pug files, storing my content as json to compile into a nice static site stored on AWS S3.',
-            'Gave AWS Microservices a spin for the contact form at the bottom of this site. Connected my email to this domain via <a href="https://aws.amazon.com/ses" target="_blank">Simple Email Service</a> and wired up a <a href="https://aws.amazon.com/lambda" target="_blank">Lambda function</a> to email the form content from my API endpoint to myself.',
+            'Built this site with a pre-designed html/css template, a great learning experience in design and layout. Broke up the html into pug files, storing my content as json to compile into a nice static site stored on AWS S3.',
+            'Used AWS Microservices for the contact form at the bottom of this site. Connected my email to this domain via <a href="https://aws.amazon.com/ses" target="_blank">Simple Email Service</a> and wired up a <a href="https://aws.amazon.com/lambda" target="_blank">Lambda function</a> to email the form content from my API endpoint to myself.',
             'Built a site for a Computational Materials research group at the University of California Riverside utilizing AWS tools: a multi-part site hosted on S3 with Microservices to handle dynamic content. Technical goals for this project included maximizing use of flexbox, using npm for all build steps, creating a scripting process to parse <a href="http://www.bibtex.org/Format" target="_blank">bibtex</a> journal listings into interactive html content. <a href="https://github.com/autumnfjeld/dralexgreaney" target="_blank">Github repo.</a> ',
             'Improving my design chops.  Enrolled in Coursera\'s <a href="https://www.coursera.org/specializations/graphic-design" target="_blank">Graphic Design Specialization</a> created by California Institute of the Arts.'
         ]
