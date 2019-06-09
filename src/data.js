@@ -55,7 +55,9 @@ var workExperience = [
 
             '<a href="https://www.cochlear.com" target="_blank">Cochlear</a>: worked on "CoPilot", a pilot app designed to make use of hearing implant data to assist recipients in maximizing functionality of their implants for optimal hearing. In charge of python back-end, data crunching, and shepherding through AWS security architecture per Cochlear and regulatory standards.',
 
-            '<a href="https://www.bluecats.com/" target="_blank">BlueCats</a>: part of small design/build team building new website (not yet deployed). Was sole engineer responsibility for all technical decisions: tech stack, build pipeline, and hosting. Site built in Angular7, hosted on Netlify, with Contentful CMS.'
+            '<a href="https://www.bluecats.com/" target="_blank">BlueCats</a>: part of small design/build team building new website (not yet deployed). Was sole engineer responsibility for all technical decisions: tech stack, build pipeline, and hosting. Site built in Angular7, hosted on Netlify, with Contentful CMS.',
+
+            '<a href="https://www.ustwo.com/blog/turning-language-into-light" target="_blank">Lumi</a>: An internal ustwo project I worked on with a designer, to create a light atmosphere that would reflect a person\'s mood. Using Philips Hue Lights, a Google Home, and a website and back-end node.js controller, and a beautiful UI design, I built an MVP that allowed user voice or text input to change the lighting in a room.  A project I\'d love to return to given the time, we had so many ideas for a fully immersive mood room (scent, music, massage chair!) that the user could command upon expressing their mood and state of mind. Read the <a href="https://www.ustwo.com/blog/turning-language-into-light" target="_blank">blog post</a> I wrote.'
         ]
     },
     {
