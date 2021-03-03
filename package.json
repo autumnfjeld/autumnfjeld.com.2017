@@ -44,7 +44,7 @@
     "cssmin": "^0.4.3",
     "less": "^2.7.2",
     "onchange": "^3.2.1",
-    "pug": "^2.0.0-beta11",
+    "pug": "^3.0.1",
     "pug-cli": "^1.0.0-alpha6",
     "uglify-js": "^3.0.8"
   },
